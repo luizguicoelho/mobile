@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
+  ScrollView,
   StyleSheet,
   TextInput,
   TouchableOpacity,
@@ -33,7 +34,7 @@ export default function Index() {
     });
 
     if (!resultado.canceled) {
-      setFotoUri(resultado.assets[0].uri); 
+      setFotoUri(resultado.assets[0].uri);
     }
   }
 
@@ -41,81 +42,85 @@ export default function Index() {
     <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      keyboardVerticalOffset={80}
+      keyboardVerticalOffset={90}
     >
-      <View style={styles.containerImg}>
-        {}
-        <TouchableOpacity onPress={escolherFoto}>
-          <Image
-            source={
-              fotoUri
-                ? { uri: fotoUri }
-                : require("../assets/images/icon.png")
-            }
-            style={styles.estiloFoto}
-          />
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.containerConteudo}>
-        <View style={styles.containerNome}>
-          <TextInput
-            style={[styles.nome, styles.textInput]}
-            placeholder="Luiz Guilherme Coelho"
-            placeholderTextColor="rgba(255,255,255,0.7)"
-            value={nome}
-            onChangeText={setNome}
-          />
-        </View>
-        <View style={styles.linhaContainer}>
-          <View style={styles.linha} />
+      <ScrollView
+        contentContainerStyle={styles.scrollContainer}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View style={styles.containerImg}>
+          <TouchableOpacity onPress={escolherFoto}>
+            <Image
+              source={
+                fotoUri
+                  ? { uri: fotoUri }
+                  : require("../assets/images/icon.png")
+              }
+              style={styles.estiloFoto}
+            />
+          </TouchableOpacity>
         </View>
 
-        <View style={styles.containerDados}>
-          <Ionicons name="person" size={24} color="white" />
-          <TextInput
-            style={[styles.textoDados, styles.textInput]}
-            placeholder="16 anos"
-            placeholderTextColor="rgba(255,255,255,0.7)"
-            value={idade}
-            onChangeText={setIdade}
-            keyboardType="numeric"
-          />
+        <View style={styles.containerConteudo}>
+          <View style={styles.containerNome}>
+            <TextInput
+              style={[styles.nome, styles.textInput]}
+              placeholder="Luiz Guilherme Coelho"
+              placeholderTextColor="rgba(255,255,255,0.7)"
+              value={nome}
+              onChangeText={setNome}
+            />
+          </View>
+          <View style={styles.linhaContainer}>
+            <View style={styles.linha} />
+          </View>
+
+          <View style={styles.containerDados}>
+            <Ionicons name="person" size={24} color="white" />
+            <TextInput
+              style={[styles.textoDados, styles.textInput]}
+              placeholder="16 anos"
+              placeholderTextColor="rgba(255,255,255,0.7)"
+              value={idade}
+              onChangeText={setIdade}
+              keyboardType="numeric"
+            />
+          </View>
+          <View style={styles.containerDados}>
+            <Ionicons name="mail" size={24} color="white" />
+            <TextInput
+              style={[styles.textoDados, styles.textInput]}
+              placeholder="Luiz.Guilherme.Coelho@escola.pr.gov.br"
+              placeholderTextColor="rgba(255,255,255,0.7)"
+              value={email}
+              onChangeText={setEmail}
+              keyboardType="email-address"
+              autoCapitalize="none"
+            />
+          </View>
+          <View style={styles.containerDados}>
+            <Ionicons name="call" size={24} color="white" />
+            <TextInput
+              style={[styles.textoDados, styles.textInput]}
+              placeholder="(42) 995649-0266"
+              placeholderTextColor="rgba(255,255,255,0.7)"
+              value={telefone}
+              onChangeText={setTelefone}
+              keyboardType="phone-pad"
+            />
+          </View>
+          <View style={styles.containerDados}>
+            <Ionicons name="home" size={24} color="white" />
+            <TextInput
+              style={[styles.textoDados, styles.textInput]}
+              placeholder="Ponta Grossa / PR"
+              placeholderTextColor="rgba(255,255,255,0.7)"
+              value={localidade}
+              onChangeText={setLocalidade}
+            />
+          </View>
         </View>
-        <View style={styles.containerDados}>
-          <Ionicons name="mail" size={24} color="white" />
-          <TextInput
-            style={[styles.textoDados, styles.textInput]}
-            placeholder="Luiz.Guilherme.Coelho@escola.pr.gov.br"
-            placeholderTextColor="rgba(255,255,255,0.7)"
-            value={email}
-            onChangeText={setEmail}
-            keyboardType="email-address"
-            autoCapitalize="none"
-          />
-        </View>
-        <View style={styles.containerDados}>
-          <Ionicons name="call" size={24} color="white" />
-          <TextInput
-            style={[styles.textoDados, styles.textInput]}
-            placeholder="(42) 995649-0266"
-            placeholderTextColor="rgba(255,255,255,0.7)"
-            value={telefone}
-            onChangeText={setTelefone}
-            keyboardType="phone-pad"
-          />
-        </View>
-        <View style={styles.containerDados}>
-          <Ionicons name="home" size={24} color="white" />
-          <TextInput
-            style={[styles.textoDados, styles.textInput]}
-            placeholder="Ponta Grossa / PR"
-            placeholderTextColor="rgba(255,255,255,0.7)"
-            value={localidade}
-            onChangeText={setLocalidade}
-          />
-        </View>
-      </View>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 }
@@ -125,6 +130,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "black",
     paddingHorizontal: 20,
+  },
+  scrollContainer: {
+    flexGrow: 1,
   },
   containerImg: {
     flex: 1,

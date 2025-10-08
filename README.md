@@ -1,10 +1,7 @@
-# 🧠 Jogo da Velha
 
-Um jogo da velha moderno e interativo desenvolvido em **React Native** usando o **Expo Go**, com foco em simplicidade, animações suaves e placar entre dois jogadores.
+## 1. 🧩 Lógica de funcionamento
 
----
-
-## 🧩 1. Lógica de funcionamento
+### 🧠 Jogo da Velha
 
 O jogo da velha é um jogo de tabuleiro simples, com **nove casas** (3x3).  
 Dois jogadores se alternam para marcar os espaços com “X” e “O”.  
@@ -20,19 +17,14 @@ A cada jogada:
 Toda a lógica é controlada por **estados** (variáveis internas) que guardam as jogadas, o turno atual, e quem venceu.  
 Animações leves dão um efeito visual agradável ao toque, deixando o jogo mais fluido.
 
----
 
-# 🧠 Jogo da Forca
-Um jogo simples e fácil baseado no jogo da forca tradicional
 
----
-
-## 🧩 1. Lógica de funcionamento
+### 🧠 Jogo da Forca
 
 O jogo inicia sorteando um tema, sendo cada tema uma lista, depois ele sorteia uma palavra de dentro da lista, após isso ele monta o visual do jogo.
 Enquanto ele roda, o jogo faz uma comparação entre as letra, como assim? O jogo pega a palavra sorteada e a separa em letras, 
 sempre que você digita uma letra, ele compara os caracteres com as letras, e coloca na tela, as palavras que vc já usou, e vai completando a palavra.
-se errar o jogo vai completando o bonequinho e se completa-lo vc perde, se completar a palavra vc ganha.
+se errar o jogo vai completando o bonequinho e se completa-lo você perde, se completar a palavra você ganha.
 
 ---
 
@@ -57,7 +49,7 @@ Basta abrir o app no celular, escanear um QR Code e o jogo é executado instanta
 
 ## ▶️ 3. Execução do projeto
 
-Para jogar o **Jogo da Velha**, siga estes passos:
+Para jogar os **Jogos**, siga estes passos:
 
 ### 📱 No celular
 1. Instale o app **Expo Go** (gratuito) na **Play Store** ou **App Store**.  

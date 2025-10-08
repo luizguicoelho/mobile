@@ -1,0 +1,152 @@
+# 🧠 Jogo da Velha
+
+Um jogo da velha moderno e interativo desenvolvido em **React Native** usando o **Expo Go**, com foco em simplicidade, animações suaves e placar entre dois jogadores.
+
+---
+
+## 🧩 1. Lógica de funcionamento
+
+O jogo da velha é um jogo de tabuleiro simples, com **nove casas** (3x3).  
+Dois jogadores se alternam para marcar os espaços com “X” e “O”.  
+O objetivo é **alinhar três símbolos iguais**, seja **na horizontal, vertical ou diagonal**.
+
+A cada jogada:
+- O jogador atual toca em uma célula vazia.
+- O símbolo (“X” ou “O”) aparece e o turno muda para o outro jogador.
+- O sistema verifica se houve um vencedor ou empate.
+- Se alguém vencer, as casas da linha vencedora são destacadas e o placar é atualizado.
+- Há botões para **reiniciar o tabuleiro** ou **zerar o placar**.
+
+Toda a lógica é controlada por **estados** (variáveis internas) que guardam as jogadas, o turno atual, e quem venceu.  
+Animações leves dão um efeito visual agradável ao toque, deixando o jogo mais fluido.
+
+---
+
+## ⚙️ 2. Linguagens e ferramentas
+
+O projeto foi criado com:
+
+### 🖥️ **VS Code**
+O **Visual Studio Code (VSCode)** é o programa usado para escrever o código.  
+Ele permite visualizar, editar e testar o aplicativo de forma prática e organizada.
+
+### ⚛️ **React Native**
+É uma tecnologia que permite criar **aplicativos móveis** usando **JavaScript**.  
+Com ele, podemos desenvolver um app que roda tanto em **Android quanto em iOS**.
+
+### 🚀 **Expo Go**
+O **Expo Go** é um aplicativo que facilita o teste de apps React Native.  
+Ele evita que o desenvolvedor precise compilar tudo manualmente.  
+Basta abrir o app no celular, escanear um QR Code e o jogo é executado instantaneamente.
+
+---
+
+## ▶️ 3. Execução do projeto
+
+Para jogar o **Jogo da Velha**, siga estes passos:
+
+### 📱 No celular
+1. Instale o app **Expo Go** (gratuito) na **Play Store** ou **App Store**.  
+2. O desenvolvedor do projeto precisa compartilhar o link ou QR Code do projeto (gerado pelo Expo).  
+3. Abra o **Expo Go**, escaneie o QR Code e o jogo iniciará automaticamente.  
+
+### 💻 Para rodar no computador (opcional)
+1. Baixe e instale o **Node.js** e o **VSCode**.  
+2. No terminal, rode:
+   ```bash
+   npx create-expo-app jogo-da-velha
+   cd jogo-da-velha
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+**1. Apresentação rápida do projeto**
+“Oi pessoal! Esse é o *Jogo da Forca*, feito com uma tecnologia chamada **React Native**, que permite criar aplicativos para celular usando **JavaScript**, uma linguagem de programação muito usada na web. A ideia é adivinhar a palavra antes que o bonequinho seja enforcado!”
+
+---
+
+**2. Estrutura geral do código**
+“O código é dividido em partes. A primeira parte importa as ferramentas necessárias, como o que mostra o texto na tela, o campo de digitar e o desenho da forca.”
+
+👉 *Exemplo para o público:* “Pense como uma caixa de ferramentas. Eu pego só o que preciso para montar o jogo.”
+
+---
+
+**3. Criação dos temas e palavras**
+“Aqui eu criei uma lista de temas — animais, frutas, países e objetos — e dentro de cada tema, várias palavras possíveis. O jogo escolhe **aleatoriamente** um tema e uma palavra toda vez que começa uma nova partida.”
+
+👉 *Exemplo:* “É como se o jogo sorteasse o tema e a palavra, tipo um sorteio automático.”
+
+---
+
+**4. Estados do jogo**
+“Depois, o código guarda informações importantes, como:
+
+* A palavra sorteada
+* As letras já tentadas
+* Quantas chances ainda restam
+* O status do jogo: se você ainda está jogando, ganhou ou perdeu”
+
+👉 *Comparação simples:* “Pense nisso como o ‘cérebro’ do jogo, lembrando tudo que acontece.”
+
+---
+
+**5. Função de iniciar o jogo**
+“Quando começa uma nova partida, o jogo escolhe o tema e a palavra, coloca os tracinhos no lugar das letras e zera as tentativas. Isso acontece automaticamente sempre que o jogo é aberto ou quando você clica em ‘Reiniciar Jogo’.”
+
+---
+
+**6. Quando o jogador digita uma letra**
+“Cada vez que o jogador digita uma letra, o código verifica:
+
+* Se é uma letra válida,
+* Se já foi tentada antes,
+* E se está na palavra.
+
+Se acertar, ele revela a letra nos tracinhos. Se errar, perde uma tentativa e o boneco ganha uma nova parte.”
+
+👉 *Comparação:* “É como um juiz que analisa a jogada e diz se você acertou ou errou.”
+
+---
+
+**7. Desenho do boneco (a forca)**
+“Essa parte usa o **SVG**, uma forma de desenhar figuras com linhas e círculos. Cada vez que o jogador erra, o código mostra uma parte nova do boneco — cabeça, corpo, braços e pernas.”
+
+👉 *Explicação leve:* “É como se o código fosse um artista que desenha aos poucos conforme você erra.”
+
+---
+
+**8. Efeitos e animação**
+“Tem também um pequeno efeito de tremida quando o jogador erra, para deixar o jogo mais vivo. Isso é feito com uma função chamada ‘shake’, que move o boneco para os lados rapidinho.”
+
+---
+
+**9. Estilo visual**
+“No final, tem uma parte chamada **StyleSheet**, que define as cores, tamanhos de fonte, fundo, botões, etc. É como escolher a roupa e o visual do jogo.”
+
+👉 *Comparação divertida:* “O código faz a função, e o estilo deixa bonito — tipo cérebro e maquiagem do app.”
+
+---
+
+**10. Encerramento**
+“Então, o código todo faz com que o jogo sorteie uma palavra, desenhe o boneco, conte as tentativas e mostre tudo na tela do celular. Mesmo parecendo complexo, tudo isso se resume a várias pequenas funções trabalhando juntas.”
+
+👉 *Fechamento:*
+“Ou seja, programação é isso — ensinar o computador passo a passo o que fazer, até ele se comportar como um jogo divertido!”
+
+---
+
+**Dica final de fala para a exposição:**
+
+> “Esse projeto mostra que dá pra unir lógica e criatividade. Eu usei programação, mas o foco foi criar algo que qualquer pessoa possa jogar e se divertir.”

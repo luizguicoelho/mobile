@@ -60,6 +60,14 @@ Para jogar o **Jogo da Velha**, siga estes passos:
 
 
 
+Jogo da Velha 
+Lógica de funcionamento
+
+O Jogo da Velha é um jogo de estratégia simples em que dois jogadores se alternam para marcar posições em um tabuleiro 3x3, usando “X” e “O”. O objetivo é conseguir três símbolos iguais na horizontal, vertical ou diagonal antes do adversário.
+No início, o tabuleiro está vazio e o jogador “X” começa a partida. Cada vez que um jogador toca em uma posição, o símbolo correspondente aparece e a vez passa para o outro jogador. O jogo verifica automaticamente se alguém ganhou ou se houve empate, mostrando uma mensagem de resultado e destacando a linha vencedora.
+O jogo mantém um placar atualizado, registrando quantas partidas cada jogador venceu. Também é possível reiniciar apenas o tabuleiro para continuar jogando mantendo o placar, ou reiniciar tudo, zerando o placar. Animações foram adicionadas para tornar o jogo mais divertido, fazendo com que os símbolos pulsem ao aparecer e destacando visualmente a linha vencedora.
+
+
 
 
 
@@ -71,7 +79,7 @@ Para jogar o **Jogo da Velha**, siga estes passos:
 
 
 
-Jogo da Forca – README
+Jogo da Forca 
 Lógica de funcionamento
 
 O Jogo da Forca é um jogo de adivinhação em que o objetivo é descobrir uma palavra antes que o bonequinho seja completamente desenhado na forca. Ao iniciar o jogo, ele escolhe aleatoriamente um tema, como animais, frutas, países ou objetos,

@@ -22,6 +22,20 @@ Animações leves dão um efeito visual agradável ao toque, deixando o jogo mai
 
 ---
 
+# 🧠 Jogo da Forca
+Um jogo simples e fácil baseado no jogo da forca tradicional
+
+---
+
+## 🧩 1. Lógica de funcionamento
+
+O jogo inicia sorteando um tema, sendo cada tema uma lista, depois ele sorteia uma palavra de dentro da lista, após isso ele monta o visual do jogo.
+enquanto ele roda, o jogo faz uma comparação entre as letra, como assim? o jogo pega a palavra sorteada e a separa em letras, 
+sempre que você digita uma letra, ele compara os caracteres com as letras, e coloca na tela, as palavras que vc já usou, e vai completando a palavra.
+se errar o jogo vai completando o bonequinho e se completa-lo vc perde, se completar a palavra vc ganha
+
+---
+
 ## ⚙️ 2. Linguagens e ferramentas
 
 O projeto foi criado com:

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Text, TextInput, View, Alert, StyleSheet, Animated, TouchableOpacity } from "react-native";
 import Svg, { Line, Circle } from "react-native-svg";
-
+//npm install react-native-svg
 // Função que remove acentos para comparação
 const normalize = (text: string) =>
   text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");

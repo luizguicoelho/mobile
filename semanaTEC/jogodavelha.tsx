@@ -188,15 +188,10 @@ export default function Index() {
         <Pressable style={styles.button} onPress={() => restartBoard(true)}>
           <Text style={styles.buttonText}>Reiniciar</Text>
         </Pressable>
-        <Pressable style={styles.buttonOutline} onPress={() => restartBoard(false)}>Criar um "README.md" com um roteiro de explicação do projeto. 
-O README deve ser separado em 3 tópicos, que possam ser entendidos por pessoas que não são da área da informática:
-- Lógica de funcionamento: explicar a lógica utilizada em seu sistema no seu ponto de vista como desenvolvedor.
-     Exemplo do T-Rex Game no Google Chrome: o jogo consiste em pular obstáculos para conseguir a maior pontuação possível. Foram criadas diferentes imagens para representar o T-Rex correndo e pulando. Também foi necessário criar diferentes obstáculos, que são sorteados aleatoriamente no decorrer do jogo. Para criar uma certa dificuldade, a velocidade dos obstáculos aumenta enquanto o jogador progride no jogo, o que requer reflexos mais rápidos. A pontuação mais alta do jogador fica armazenada, criando o desafio de aumentar seus pontos a cada rodada.
-- Linguagens e ferramentas: explicação simples da linguagem de programação escolhida ou framework.
-      Para sites: explicar de forma simplificada o que é o VSCode, HTML, CSS e JavaScript.
-      Para aplicativos: explicar de forma simplificada o que é VSCode, framework e Expo Go.
-- Execução do projeto: explicar o que o usuário precisa fazer para executar o código do projeto
-      O usuário consegue executar através de um link? Precisa baixar algum aplicativo como o Expo Go? Precisa baixar algo no computador?
+        <Pressable style={styles.buttonOutline} onPress={() => restartBoard(false)}>
+          <Text style={styles.buttonOutlineText}>Zerar Placar</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }

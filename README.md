@@ -59,6 +59,8 @@ Para jogar os **Jogos**, siga estes passos:
    npx create-expo-app@latest jogo
    cd jogo
    npm run reset-project
+3. Dentro da pasta jogo, abrir a pasta 'app/' e substitua os códigos do arquivo 'index.tsx' pelo jogo desejado:
+   ```bash
    npm install react-native-svg
 
 ### 📱 No celular

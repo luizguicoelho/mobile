@@ -59,6 +59,7 @@ Para jogar os **Jogos**, siga estes passos:
    npx create-expo-app@latest jogo
    cd jogo
    npm run reset-project
+   npm install react-native-svg
 
 ### 📱 No celular
 1. Instale o app **Expo Go** (gratuito) na **Play Store** ou **App Store**.  

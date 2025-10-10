@@ -47,21 +47,23 @@ Basta abrir o app no celular, escanear um QR Code e o jogo é executado instanta
 
 ---
 
+
 ## ▶️ 3. Execução do projeto
 
 Para jogar os **Jogos**, siga estes passos:
+
+### 💻 Para rodar no computador
+1. Baixe e instale o **Node.js** e o **VSCode**.  
+2. No terminal, rode:
+   ```bash
+   npx create-expo-app@latest jogo
+   cd jogo
+   npm run reset-project
 
 ### 📱 No celular
 1. Instale o app **Expo Go** (gratuito) na **Play Store** ou **App Store**.  
 2. O desenvolvedor do projeto precisa compartilhar o link ou QR Code do projeto (gerado pelo Expo).  
 3. Abra o **Expo Go**, escaneie o QR Code e o jogo iniciará automaticamente.  
-
-### 💻 Para rodar no computador (opcional)
-1. Baixe e instale o **Node.js** e o **VSCode**.  
-2. No terminal, rode:
-   ```bash
-   npx create-expo-app jogo-da-velha
-   cd jogo-da-velha
 
 
 

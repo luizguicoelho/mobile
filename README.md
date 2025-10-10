@@ -62,6 +62,7 @@ Para jogar os **Jogos**, siga estes passos:
 3. Dentro da pasta jogo, abrir a pasta 'app/' e substitua os códigos do arquivo 'index.tsx' pelo jogo desejado:
    ```bash
    npm install react-native-svg
+   npx expo start
 
 ### 📱 No celular
 1. Instale o app **Expo Go** (gratuito) na **Play Store** ou **App Store**.  
